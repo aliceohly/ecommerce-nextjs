@@ -17,7 +17,7 @@ export default function FormSubmitButton({
 
   return (
     <button
-      {...props}
+      {...props} // Put it first so the next few lines can override it
       type="submit"
       disabled={pending}
       className={`btn btn-primary btn-block ${className}`}
