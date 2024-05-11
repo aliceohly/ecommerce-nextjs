@@ -16,7 +16,7 @@ const getProduct = cache(async (id: string) => {
     where: { id },
   });
 
-  // not-founc.tsx is created in the app directory
+  // not-found.tsx is created in the app directory
   if (!product) notFound();
   return product;
 });
