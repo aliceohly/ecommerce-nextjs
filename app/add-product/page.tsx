@@ -1,18 +1,23 @@
 import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
 import FormSubmitButton from "../components/FormSubmitButton";
+import { getServerSession } from "next-auth";
+import { authOptions } from "../api/auth/[...nextauth]/route";
 
 export const metadata = { title: "Add Product" };
 
 async function addProduct(formData: FormData) {
   "use server";
 
+  // protect submit form button with auth
+  const session = await getServerSession(authOptions);
+
+  if (!session) redirect("/api/auth/signin?callbackUrl=/add-product");
+
   const name = formData.get("name")?.toString();
   const description = formData.get("description")?.toString();
   const imageUrl = formData.get("imageUrl")?.toString();
   const price = formData.get("price")?.toString();
-
-  console.log({ name, description, imageUrl, price });
 
   if (!name || !description || !imageUrl || !price) {
     throw Error("Missing required fields");
@@ -22,10 +27,15 @@ async function addProduct(formData: FormData) {
     data: { name, description, imageUrl, price: parseInt(price) },
   });
 
-  //   redirect("/");
+  redirect("/");
 }
 
-export default function AddProductPage() {
+export default async function AddProductPage() {
+  // protect route with auth
+  const session = await getServerSession(authOptions);
+
+  if (!session) redirect("/api/auth/signin?callbackUrl=/add-product");
+
   return (
     <div>
       <div className="text-lg font-bold">Add Product</div>
