@@ -33,6 +33,30 @@ model Cart {
   @@map("carts")
 }
 
+// Cart example
+// {
+//   id: '663f2759708b06b18a28ff73',
+//   userId: null,
+//   createdAt: 2024-05-11T08:07:53.962Z,
+//   updatedAt: 2024-05-11T08:07:53.962Z,
+//   items: [
+//     {
+//       id: '66459eef96f150e42f12bd69',
+//       productId: '65eab55a65121a9796cb6d6c',
+//       cartId: '663f2759708b06b18a28ff73',
+//       quantity: 1,
+//       product: [Object]
+//     },
+//     {
+//       id: '66459f1696f150e42f12bd6a',
+//       productId: '65eab27665121a9796cb6d68',
+//       cartId: '663f2759708b06b18a28ff73',
+//       quantity: 1,
+//       product: [Object]
+//     }
+//   ]
+// }
+
 model CartItem {
   id        String  @id @default(auto()) @map("_id") @db.ObjectId
   productId String  @db.ObjectId
