@@ -14,10 +14,6 @@ export type ShoppingCart = CartWithProducts & {
   subtotal: number;
 };
 
-export type CartItem = Prisma.CartItemGetPayload<{
-  include: { product: true };
-}>;
-
 export async function getCart(): Promise<ShoppingCart | null> {
   // Get session id from next auth, if exists, check in db, return user cart
   // If not, check in cookie, return local cart
@@ -43,8 +39,6 @@ export async function getCart(): Promise<ShoppingCart | null> {
         })
       : null;
   }
-
-  console.log(`userId`, userId, `cart`, cart);
 
   if (!cart) return null;
 
@@ -86,20 +80,19 @@ export async function createCart(): Promise<ShoppingCart> {
 }
 
 // Merge annoumous cart with sign-in user cart
-export async function mergeCarts() {
-  // Sudocode
-  // Get session from next auth
-  // Get local cart id from cookie
-  // Return if local cart does not exist
-  // Within a transaction:
-  // If session exists and local cart id exists, merge local cart with user cart
-  // If session exists and local cart id does not exist, do nothing
-  // If session does not exist, create all items in local cart in user cart
-  // Delete local cart and cookie
+// Sudocode
+// Get session from next auth
+// Get local cart id from cookie
+// Return if local cart does not exist
+// Within a transaction:
+// If session exists and local cart id exists, merge local cart with user cart
+// If session does not exist, create all items in local cart in user cart
+// Delete local cart and cookie
 
+export async function mergeCarts(userId: string) {
   const session = await getServerSession(authOptions);
   const userCart = await prisma.cart.findFirst({
-    where: { userId: session?.user?.id },
+    where: { userId: userId },
     include: { items: true },
   });
 
@@ -115,23 +108,21 @@ export async function mergeCarts() {
     if (userCart) {
       const mergedCart = mergeCartItems(userCart.items, localCart.items);
 
-      await prisma.cart.create({
-        data: {
-          userId: session?.user?.id,
-          items: {
-            createMany: {
-              data: mergedCart.map((item) => ({
-                productId: item.productId,
-                quantity: item.quantity,
-              })),
-            },
-          },
-        },
+      await prisma.cartItem.deleteMany({
+        where: { cartId: userCart.id },
+      });
+
+      await prisma.cartItem.createMany({
+        data: mergedCart.map((item) => ({
+          cartId: userCart.id,
+          productId: item.productId,
+          quantity: item.quantity,
+        })),
       });
     } else {
       await prisma.cart.create({
         data: {
-          userId: session?.user?.id,
+          userId,
           items: {
             createMany: {
               data: localCart.items.map((item) => ({
