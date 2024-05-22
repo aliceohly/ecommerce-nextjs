@@ -1,6 +1,6 @@
 "use client";
 
-import { CartItem } from "@/lib/db/cart";
+import { CartItemWithProducts } from "@/lib/db/cart";
 import Link from "next/link";
 import Image from "next/image";
 import { formatPrice } from "@/lib/formatPrice";
@@ -8,7 +8,7 @@ import { useState, useTransition } from "react";
 import { amendProductQuantity, removeProduct } from "./actions";
 
 interface CartEntryProps {
-  item: CartItem;
+  item: CartItemWithProducts;
 }
 
 export default function CartEntry({ item }: CartEntryProps) {
