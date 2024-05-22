@@ -2,7 +2,7 @@ import { cookies } from "next/dist/client/components/headers";
 import { prisma } from "./prisma";
 import { Cart, CartItem, Prisma } from "@prisma/client";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "../auth";
 
 // ??
 export type CartWithProducts = Prisma.CartGetPayload<{
@@ -13,6 +13,10 @@ export type ShoppingCart = CartWithProducts & {
   size: number;
   subtotal: number;
 };
+
+export type CartItemWithProducts = Prisma.CartItemGetPayload<{
+  include: { product: true };
+}>;
 
 export async function getCart(): Promise<ShoppingCart | null> {
   // Get session id from next auth, if exists, check in db, return user cart
