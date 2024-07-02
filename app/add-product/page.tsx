@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import FormSubmitButton from "../components/FormSubmitButton";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
+import mockData from "./mockData.json";
 
 export const metadata = { title: "Add Product" };
 
@@ -26,6 +27,15 @@ async function addProduct(formData: FormData) {
   await prisma.product.create({
     data: { name, description, imageUrl, price: parseInt(price) },
   });
+
+  // add mock data
+  // const products = mockData;
+
+  // for (const product of products) {
+  //   await prisma.product.create({
+  //     data: product,
+  //   });
+  // }
 
   redirect("/");
 }

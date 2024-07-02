@@ -8,8 +8,8 @@ import SessionProvider from "./SessionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WAW CORP",
-  description: "WAW TO CONQUER THE WORLD",
+  title: "Snacky",
+  description: "A snack delivery service",
 };
 
 export default function RootLayout({

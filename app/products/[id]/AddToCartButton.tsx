@@ -16,7 +16,7 @@ export default async function AddToCartButton({
   return (
     <div className="flex items-center gap-2">
       <button
-        className="flex items-center gap-2 rounded bg-blue-500 px-4 py-2 text-white"
+        className="flex items-center gap-2 rounded bg-blue-400 px-4 py-2 text-white"
         onClick={() => {
           startTransition(async () => {
             setIsSuccess(false);
@@ -25,7 +25,7 @@ export default async function AddToCartButton({
           });
         }}
       >
-        Adopt Me
+        Add to Cart
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"

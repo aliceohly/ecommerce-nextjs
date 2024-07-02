@@ -13,7 +13,7 @@ interface ProductProps {
 export default function ProductCard({ product }: ProductProps) {
   return (
     <Link
-      className="card w-96 bg-base-100 shadow-xl"
+      className="card mb-5 w-96 bg-base-100 shadow-xl"
       href={"/products/" + product.id}
     >
       <figure>
@@ -30,7 +30,7 @@ export default function ProductCard({ product }: ProductProps) {
           {product.name}
           <div className="badge badge-secondary">NEW</div>
         </h2>
-        <p className="h-48 overflow-auto">{product.description}</p>
+        <p className="h-[100px] overflow-auto">{product.description}</p>
         <PriceTag className="mt-2" productPrice={product.price} />
       </div>
     </Link>

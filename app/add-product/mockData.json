@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Cream Puffs",
+    "description": "Delight in the airy and luscious taste of Cream Puffs, featuring light choux pastry filled with rich, creamy custard. These delectable treats are a perfect balance of fluffy pastry and smooth filling, making them an irresistible choice for dessert lovers. Enjoy the classic elegance of Cream Puffs as a sweet indulgence anytime!",
+    "imageUrl": "https://www.thespruceeats.com/thmb/nUroLD-uk-b43pHNZ5Id_5sWO_E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cream-puffs-recipe-6823187-hero-03-08db1dca25dd4622bc1d9da2577c781e.jpg",
+    "price": 20
+  },
+  {
+    "name": "Mochi",
+    "description": "Savor the chewy delight of Japanese mochi, crafted from glutinous rice and filled with sweet bean paste or other delectable fillings. Whether enjoyed as a snack or dessert, our mochi offers a delightful texture and a burst of authentic Japanese flavors. Perfect for sharing with loved ones or treating yourself to a taste of Japan.",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1700590072733-51ba16e93d38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9jaGl8ZW58MHx8MHx8fDA%3D",
+    "price": 15
+  },
+  {
+    "name": "Taiyaki",
+    "description": "Enjoy the whimsical charm of Japanese taiyaki, a fish-shaped cake filled with sweet red bean paste, custard, or chocolate. Crispy on the outside and soft on the inside, our taiyaki is a popular street food treat that promises to satisfy your sweet tooth and bring a smile to your face. Perfect for enjoying on the go or as a fun dessert option.",
+    "imageUrl": "https://images.unsplash.com/photo-1602030029545-52959ef2927c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGFpeWFraSUyMnxlbnwwfHwwfHx8MA%3D%3D",
+    "price": 12
+  },
+  {
+    "name": "Dry Mango",
+    "description": "Savor the tropical sweetness of our Dry Mango slices, made from ripe mangoes harvested at peak freshness. These chewy and flavorful snacks are packed with natural goodness and are a perfect choice for a healthy and satisfying treat. Enjoy them on their own or as a delightful addition to yogurt, cereal, or trail mix.",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1695055513587-4f0ef5ff6702?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRyeSUyMG1hbmdvfGVufDB8fDB8fHww",
+    "price": 10
+  },
+  {
+    "name": "Seaweed Snack",
+    "description": "Delight in the umami-rich flavor of crispy seaweed snacks, lightly seasoned and perfect for satisfying your snack cravings. Our seaweed snacks are packed with nutrients and offer a guilt-free way to enjoy the flavors of the sea. Whether enjoyed on their own or paired with sushi, they're a crunchy delight.",
+    "imageUrl": "https://images.unsplash.com/photo-1610933100814-cc000875aaf3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNlYXdlZWR8ZW58MHx8MHx8fDA%3D",
+    "price": 7
+  },
+  {
+    "name": "Pocky",
+    "description": "Indulge in the iconic Japanese snack, Pocky, featuring crispy biscuit sticks coated in a variety of creamy flavors such as chocolate, strawberry, and matcha. Fun to eat and impossible to resist, Pocky is loved by snack enthusiasts of all ages. Perfect for sharing with friends or enjoying as a delicious treat anytime.",
+    "imageUrl": "https://images.unsplash.com/photo-1648515445446-6a9a2c2dff89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UG9ja3l8ZW58MHx8MHx8fDA%3D",
+    "price": 30
+  },
+  {
+    "name": "Wasabi Peas",
+    "description": "Spice up your snacking experience with our crunchy wasabi peas, featuring roasted green peas coated in zesty wasabi seasoning. A perfect blend of heat and crunch, these addictive snacks are ideal for those who enjoy a bit of spice with their munchies. Grab a handful and kick your snack time up a notch!",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1663844169558-e5a282d319a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFBlYXN8ZW58MHx8MHx8fDA%3D",
+    "price": 8
+  },
+  {
+    "name": "Yakitori Senbei",
+    "description": "Enjoy the savory crunch of Yakitori Senbei, a traditional Japanese rice cracker flavored with soy sauce and grilled chicken. These addictive snacks are perfect for pairing with beer or enjoying as a satisfying midday treat. Experience the authentic flavors of Japanese street food with every bite!",
+    "imageUrl": "https://images.unsplash.com/photo-1507087580589-28522ba035a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VuYmVpfGVufDB8fDB8fHww",
+    "price": 14
+  },
+  {
+    "name": "Green Tea Kit Kat",
+    "description": "Indulge in the unique flavors of Green Tea Kit Kat, a beloved Japanese confectionery featuring crispy wafer fingers coated in creamy green tea-flavored chocolate. Perfect for green tea enthusiasts or anyone looking for a delightful twist on a classic treat, Green Tea Kit Kat promises a taste of Japan in every bite.",
+    "imageUrl": "https://images.unsplash.com/photo-1604815891325-0f9c17688328?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGtpdCUyMGthdHxlbnwwfHwwfHx8MA%3D%3D",
+    "price": 17
+  },
+  {
+    "name": "Yuzu Gummy Candy",
+    "description": "Treat yourself to the tangy sweetness of Yuzu Gummy Candy, featuring chewy gummies infused with the refreshing citrus flavor of yuzu. Bursting with natural fruit taste, these Japanese gummies are a delightful snack or treat for any occasion. Enjoy the bright and zesty flavors of yuzu with every chew!",
+    "imageUrl": "https://images.unsplash.com/photo-1616536814966-0014333fbb0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGd1bW15fGVufDB8fDB8fHww",
+    "price": 6
+  },
+  {
+    "name": "Red Bean Dorayaki",
+    "description": "Experience the sweet delight of Red Bean Dorayaki, a Japanese pancake sandwich filled with sweet red bean paste. Soft and fluffy on the outside with a decadent red bean filling, these traditional treats are perfect for satisfying your sweet tooth. Enjoy them as a dessert or indulgent snack!",
+    "imageUrl": "https://images.unsplash.com/photo-1507009977554-470051a8d4d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RG9yYXlha2l8ZW58MHx8MHx8fDA%3D",
+    "price": 19
+  },
+  {
+    "name": "Vietnamese Coffee",
+    "description": "Awaken your senses with the rich and bold flavors of Vietnamese Coffee, featuring strong coffee brewed with sweetened condensed milk. Known for its smooth and intense taste, Vietnamese Coffee is a beloved beverage enjoyed both hot and cold. Experience the unique coffee culture of Vietnam in every sip!",
+    "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8VmlldG5hbWVzZSUyMENvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": 14
+  },
+  {
+    "name": "Daifuku",
+    "description": "Indulge in the delicate and sweet flavors of Daifuku, a traditional Japanese confection made of soft mochi filled with sweet red bean paste or other delightful fillings. These chewy and delectable treats offer a perfect balance of texture and taste, making them a popular choice for dessert or a delightful snack any time of day.",
+    "imageUrl": "https://images.unsplash.com/photo-1652536942156-457e44f41732?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGFpZnVrdXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": 5
+  },
+  {
+    "name": "Tang Hulu",
+    "description": "Experience the sweet and tangy delight of Tanghulu, a traditional Chinese snack featuring fresh fruits like hawthorn berries, strawberries, or grapes coated in a crunchy sugar glaze. These candied fruit skewers offer a perfect balance of sweetness and tartness, making them a popular treat for both kids and adults. Enjoy the unique and refreshing taste of Tanghulu anytime!",
+    "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2024/02/Tanghulu_FT24_276063_JR_0229_8.jpg?fit=700%2C1024",
+    "price": 8
+  }
+]

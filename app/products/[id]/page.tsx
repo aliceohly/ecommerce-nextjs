@@ -28,7 +28,7 @@ export async function generateMetadata({
   const product = await getProduct(id);
 
   return {
-    title: product.name + "- Waw Corp",
+    title: product.name + "- Snacky",
     description: product.description,
     openGraph: { images: [{ url: product.imageUrl }] },
   };
@@ -40,7 +40,7 @@ export default async function ProductPage({
   const product = await getProduct(id); // remember to use await
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
+    <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
       <Image
         src={product.imageUrl}
         alt={product.name}

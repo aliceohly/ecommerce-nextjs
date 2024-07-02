@@ -22,11 +22,11 @@ export default async function Navbar() {
 
   return (
     <div className="bg-base-100">
-      <div className="margin-auto navbar max-w-7xl flex-col sm:flex-row">
+      <div className="navbar m-auto max-w-7xl flex-col sm:flex-row">
         <div className="flex-1">
           <Link className="btn btn-ghost text-xl" href={"/"}>
             <Image src={logo} height={40} width={40} alt="Flowmazon logo" />
-            Waw Corp
+            Snacky
           </Link>
         </div>
         <div className="flex-none gap-2">
